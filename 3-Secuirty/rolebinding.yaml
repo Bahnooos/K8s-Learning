@@ -1,0 +1,16 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  creationTimestamp: "2026-09-27T12:51:02Z"
+  name: test-rolebinding
+  namespace: default
+  resourceVersion: "15372"
+  uid: 47810215-98b7-494c-b716-16165434ad0b
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: pod-role
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: User
+  name: system:serviceaccount:default:test-sa

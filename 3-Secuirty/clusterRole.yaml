@@ -1,0 +1,16 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  creationTimestamp: "2026-09-27T13:06:56Z"
+  name: pod-reader
+  resourceVersion: "16625"
+  uid: c89dbc6c-8779-4bbb-9a97-fd7e2b862d4e
+rules:
+- apiGroups:
+  - ""
+  resources:
+  - pods
+  verbs:
+  - get
+  - list
+  - watch
